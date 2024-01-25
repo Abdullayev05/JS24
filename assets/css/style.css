@@ -1,54 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
-section{
+
+section {
     padding: 30px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
-table{
+
+table {
     width: 600px;
     text-align: center;
     height: fit-content;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     width: 400px;
     padding: 20px;
     border: 1px solid black;
 }
-.form-group{
+
+.form-group {
     width: 100%;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
 }
-.form-group label{
+
+.form-group label {
     font-size: 20px;
     line-height: 24px;
 }
+
 .form-group input,
-.form-group select{
+.form-group select {
     font-size: 18px;
     height: 24px;
     padding-left: 5px;
     width: 280px;
 }
-form button{
+
+form button {
     height: 30px;
 }
-.female{
+
+.female {
     background-color: pink;
 }
-.male{
+
+.male {
     background-color: aqua;
 }
-.error{
+
+.error {
     background-color: red;
+}
+
+#pop_up {
+    height: 400px;
+    width: 500px;
+    background-color: rgb(222, 231, 231);
+    position: absolute;
+    margin-top: 70px;
+    border-radius: 8px;
+    border: 1px solid black;
+    /* display: none; */
+}
+
+#pop_up_info {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10px; */
+    gap: 25px;
+}
+
+#yadda_saxla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: 0;
+    color: aliceblue;
+    background-color: rgb(126, 126, 146);
+}
+
+#pop_up input {
+    height: 40px;
+}
+
+#pop_up select {
+    height: 40px;
+}
+
+#pop_up label {
+    font-size: 30px;
+}
+
+#pop_up .x_icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
 }

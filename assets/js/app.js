@@ -4,6 +4,11 @@ let nameInput = document.querySelector("input[name='s_name']");
 let ageInput = document.querySelector("input[name='s_age']");
 let genderOption = document.querySelector("select");
 let table = document.querySelector("table");
+let popUp = document.querySelector("pop_up");
+let yaddaSaxla = document.querySelector("yadda_saxla");
+document.querySelector("i").addEventListener("click", () => {
+  document.getElementById("pop_up").remove();
+});
 let persons = [];
 let checkRepeat = false;
 const showData = () => {
@@ -47,8 +52,12 @@ const showData = () => {
     nameInput.value = person.s_name;
     ageInput.value = person.s_age;
     genderOption.value = person.s_gender;
+    
   });
 };
+// yaddaSaxla.addEventListener("click", () => {
+
+// })
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
   let addSurname = surnameInput.value;
