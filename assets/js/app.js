@@ -52,11 +52,10 @@ const showData = () => {
     nameInput.value = person.s_name;
     ageInput.value = person.s_age;
     genderOption.value = person.s_gender;
-    
   });
 };
 // yaddaSaxla.addEventListener("click", () => {
-
+  
 // })
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
